@@ -3,4 +3,9 @@ main:
   path: ~
   controller: App\Controller\HomeController
   action: index
+trailer:
+  method: 'get'
+  path: trailer/{id}
+  controller: App\Controller\HomeController
+  action: trailer
 

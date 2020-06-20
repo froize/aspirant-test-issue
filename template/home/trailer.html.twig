@@ -1,0 +1,19 @@
+{% extends 'main.html.twig' %}
+
+{% block title %}{{ trailer.value.title }} - iTunes Movie trailers{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="mt-5 mb-4">{{ trailer.value.title }}</h1>
+        <p><a href="/">Back to Home</a></p>
+        <table class="table table-bordered">
+            <tr>
+                <td>{{ trailer.value.title }}</td>
+                <td><img src="{{ trailer.value.image }}" alt="{{ trailer.value.title }} poster"/></td>
+                <td>{{ trailer.value.description }}</td>
+                <td><a href="{{ trailer.value.link }}">Source</a></td>
+
+            </tr>
+        </table>
+    </div>
+{% endblock %}
