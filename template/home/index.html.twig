@@ -1,0 +1,23 @@
+{% extends 'main.html.twig' %}
+
+{% block title %}Test task{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Test task</h1>
+    <table class="table table-bordered">
+        <tr>
+            <td>Current time & date:</td>
+            <td>{{ date }}</td>
+        </tr>
+        <tr>
+            <td>Controller name:</td>
+            <td>{{ controller }}</td>
+        </tr>
+        <tr>
+            <td>Controller method:</td>
+            <td>{{ controllerMethod }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
