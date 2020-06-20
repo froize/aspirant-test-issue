@@ -58,6 +58,7 @@ class WebProvider implements ServiceProviderInterface
                     ->setName($routeName);
             }
         });
+
     }
 
     /**
